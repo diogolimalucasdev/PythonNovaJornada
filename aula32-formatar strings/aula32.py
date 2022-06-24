@@ -10,6 +10,8 @@ formatando valores com modificadores
 < - DIREITA
 ^ - CENTRO
 
+
+
 """
 
 num_1 = 10
@@ -38,5 +40,5 @@ print(f'{num_7:0<7.2f}')  # agora alem de tranformar para float eu adiciona mais
 nome = 'Diogo Lima Lucas'
 print(f'{nome:#^50}')  # centralizando meu nome ao centro e adicionado # aos lados
 
-nome = 'DIOGO LIMA'
+nome = 'DIOGO LIMA LUCAS'
 print(f'{nome:s}')
