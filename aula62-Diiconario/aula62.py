@@ -14,10 +14,9 @@ d2 = {
 
 print(d2[12 , 34 , 5])  # acessando a chave que esta contida por um tupla
 
-#outra mandeira de buscar a chave
+# outra mandeira de buscar a chave
 d2['nomedachave'] = 'Agora ela existe'
 if d2.get('nomedachave') is not None:
     print(d2.get('nomedachave'))
 else:
     print("nao existe")
-
