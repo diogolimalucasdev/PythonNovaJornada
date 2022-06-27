@@ -20,3 +20,9 @@ if d2.get('nomedachave') is not None:
     print(d2.get('nomedachave'))
 else:
     print("nao existe")
+
+
+
+#como chegar um valor no dicionarios
+
+print('valor' in d2.values())
