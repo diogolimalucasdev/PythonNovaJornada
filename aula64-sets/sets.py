@@ -21,3 +21,25 @@ lista = set(lista) #transformei para set
 print(lista) #agora tudo que estava duplicado sumiu
 lista = list(lista) #e transformo para lista novamente, tem que tomqar cuidado com os elementos fora de ordem
 print(lista)
+
+
+
+l1 = {1,2,3,4,5,7}
+l2 = {1,2,3,4,5,6}
+
+l3 = l1 | l2  #union
+print(l3)
+
+l3 = l1 & l2  #intersection
+print(l3)
+
+l3 = l1 - l2 #diferrence sempre priorizando o primeiro set
+print(l3)
+
+l3 = l2 - l1 #diferrence sempre priorizando o primeiro set
+print(l3)
+
+
+
+l3 = l1 ^ l2 #elementos que estao em cada um mas nao em ambos
+print(l3)
