@@ -39,9 +39,9 @@ estados = ['SP' , 'MG' , 'BA']  # eu quero unir essas duas listas, sao paulo > s
 
 cidades_estados = zip(estados , cidades)  # o zip junto as duas lista ate terminar a lista menor
 
-# for valor in cidades_estados:
-     # print(valor[0] , valor[1])
-    # # ou assim
-    # print(valor)
+for valor in cidades_estados:
+     print(valor[0] , valor[1])
+    # ou assim
+
 
 
