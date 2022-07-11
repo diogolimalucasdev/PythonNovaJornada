@@ -28,3 +28,6 @@ from random import *  #o * serve para falar que quero importa tudo
 
 #import mais de uma coisa
 # from random import randint, random
+
+
+#para importar modulos externos eu uso o pip install e o nome do pacote
