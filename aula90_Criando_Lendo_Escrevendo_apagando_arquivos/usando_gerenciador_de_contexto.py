@@ -7,3 +7,5 @@ with open('novo_arquivo.txt', 'w+') as file:
 
     file.seek(0)
     print(file.read())
+
+
