@@ -15,11 +15,17 @@ file.seek(0 , 0)
 print(file.read())
 
 # segunda maneira - lendo linha por linha
-print('########################')
+print('2 maneira ########################')
 file.seek(0 , 0)
-print(file.readline() , end = '')  # end para nao pegar a quebra de linha
+print(file.readline() , end = '')  # end para nao pegar a quebra de linha, readline pega linha por linha
 print(file.readline() , end = '')
 print(file.readline() , end = '')
+
+# terceira maneira
+print("\n 3 maneira ################")
+file.seek(0 , 0)  # seto meu crusor novamente
+for linha in file.readlines():  # readlines gera uma lista por isso vou ursar o for para pecorrer
+    print(linha, end="")  # printo linha por linha
 
 # fecho meu arquivo quando eu termino de utilizar ele
 file.close()
