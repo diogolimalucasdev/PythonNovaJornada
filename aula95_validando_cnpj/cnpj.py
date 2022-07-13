@@ -5,20 +5,21 @@ def remover_caracteres(cnpj):
     cnpj_limpo = re.sub(r'[^0-9]' , '' , cnpj)  # tudo que for diferente de 0-9 vai ser substituito para ''
     return cnpj_limpo
 
+
 def remover_dois_digitos(cnpj):
     doze_digitos = cnpj[:-2]
+    print(doze_digitos)
     return doze_digitos
 
 
 def verificar_primeiro_digito(cnpj):
     formula1 = [5 , 4 , 3 , 2 , 9 , 8 , 7 , 6 , 5 , 4 , 3 , 2]
-    multiplica = list(map(lambda x , y: x * y ,cnpj , formula1))
+    multiplica = list(map(lambda x , y: x * y , cnpj , formula1))
     multiplica = sum(multiplica)
     resultado = 11 - (multiplica % 11)
-
+    print(f"resultado do primeiro digitio {resultado}")
     if resultado > 9:
-        resultado = 0
-        return resultado
+        return 0
     else:
         return resultado
 
@@ -28,7 +29,8 @@ def verificar_segundo_digito(cnpj):
     multiplica = list(map(lambda x , y: x * y , cnpj , formula2))
     multiplica = sum(multiplica)
     resultado = 11 - (multiplica % 11)
+    print(f"resultado do segundo digitio {resultado}")
     if resultado > 9:
         return 0
     else:
-        return  resultado
+        return resultado

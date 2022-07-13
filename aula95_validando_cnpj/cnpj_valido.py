@@ -27,19 +27,28 @@ cpnj = input('Digite o cnpj: ')
 cnpj_limpo = remover_caracteres(cpnj)
 
 cnpj_sem_caracter = remover_dois_digitos(cnpj_limpo)
+# print(f"Cnpj sem os dois digitos: {cnpj_sem_caracter}")
 
-cnpj_sem_caracter = list(cnpj_limpo)
+cnpj_sem_caracter = list(cnpj_sem_caracter)
+# print(cnpj_sem_caracter)
+
 cnpj_sem_caracter = [int(val) for val in cnpj_sem_caracter]
+# print(f"cnpj em loista sem os dfois digitios {cnpj_sem_caracter}")
 
 primeiro_digito = verificar_primeiro_digito(cnpj_sem_caracter)
-cnpj_sem_caracter.append(primeiro_digito)
+# print(f"primeiro digito retorno {primeiro_digito}")
 
+cnpj_sem_caracter.append(primeiro_digito)
+# print(f"cnpj com um caracter ja: {cnpj_sem_caracter}")
+# print(f"o que ta chegando do primeiro digito {primeiro_digito}" )
 segundo_digito = verificar_segundo_digito(cnpj_sem_caracter)
+# print(f"o que ta chegando do segundo digito {segundo_digito}")
+
+cnpj_sem_caracter.append(segundo_digito)
+# print(f"cnpj com dois caracteres ja: {cnpj_sem_caracter}")
 
 cnpj_limpo = list(cnpj_limpo)
 cnpj_limpo= [int(val) for val in cnpj_sem_caracter]
-print(cnpj_limpo)
-print(cnpj_sem_caracter)
 
 if cnpj_limpo == cnpj_sem_caracter:
     print("Cnpj é valido!")
