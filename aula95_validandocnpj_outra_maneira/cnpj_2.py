@@ -10,8 +10,11 @@ def valida(cnpj):
         print("É uma sequencia")
         return False
 
-    novo_cnpj = calcula_digito(cnpj = cnpj , digito = 1)
-    novo_cnpj = calcula_digito(cnpj = novo_cnpj , digito = 2)
+    try:
+        novo_cnpj = calcula_digito(cnpj = cnpj , digito = 1)
+        novo_cnpj = calcula_digito(cnpj = novo_cnpj , digito = 2)
+    except Exception as e:
+        return False
 
     if novo_cnpj == cnpj:
         return True
