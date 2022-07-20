@@ -7,9 +7,12 @@
 class Produto:
     def __init__(self, nome, preco):
         self.nome = nome
+        # print("passou pelo init")
         self.preco = preco
 
     def desconto(self, percentual):
+        # print(type(percentual))
+        # print(type(self.preco))
         self.preco = self.preco - (self.preco * (percentual / 100))
 
     @property
@@ -29,14 +32,16 @@ class Produto:
     # Coloco o nome da propriedade que eu quero, e o setter depois, como no exemplo
     @preco.setter
     def preco(self, valor):
+        # print('chamou o preço')
         # estou verificando se o valor que foi passado é uma instancia de string(str)
         if isinstance(valor, str):
             # converto para float e uso um replace para retirar o cifrao (R$)/poderiaa usar expressoes regulares
-            valor = float(valor.replace('R$', ''))
+            valor = int(valor.replace('R$', ''))
 
         self._preco = valor
 
 
+# quando eu chamo minha classe, com os parametros eu preencho meus atributos
 produto1 = Produto('CAMISETA', 50)
 produto1.desconto(10)
 print(produto1.nome, produto1.preco)
