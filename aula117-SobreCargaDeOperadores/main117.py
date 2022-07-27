@@ -30,16 +30,17 @@ class Retangulo:
     def get_area(self):
         return self.x * self.y
 
-
     """
     faço isso para que meu printo mostre o resultado da soma do meu retangulo
     """
+
     def __repr__(self):
         return f"<class 'Retangulo({self.x}, {self.y}) '>"
 
     """
     self representa a instancia e o other represemta o objeto
     """
+
     def __add__(self, other):
         """
         falo para o python que meu novo x é(x + x) e meu novo y é (y + y) que no casso é o self + o other
@@ -73,8 +74,7 @@ class Retangulo:
             return False
 
 
-
 r1 = Retangulo(10, 20)
 r2 = Retangulo(10, 20)
-r3 =  r1 + r2
+r3 = r1 + r2
 print(r1 == r2)
