@@ -1,4 +1,4 @@
-from dados import produtos , pessoas , lista
+from aula137_Json.dados import produtos , pessoas , lista
 
 print(lista)
 
