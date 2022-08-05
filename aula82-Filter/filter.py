@@ -1,4 +1,4 @@
-from dados import lista , pessoas , produtos
+from aula137_Json.dados import lista , pessoas , produtos
 
 # muito similiar ao map, tambem reecebe uma função, a diferença que o filter retornar True or false
 nova_lista = filter(lambda x: x > 5 , lista)  # todos numeros que forem acima de 5 serao mantidos na nova_lista

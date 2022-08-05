@@ -1,5 +1,5 @@
 from functools import reduce
-from dados import  lista, pessoas, produtos
+from aula137_Json.dados import  lista, pessoas, produtos
 
 #acumuladora compulsiva, acumuladora de valores
 acumula = 0
