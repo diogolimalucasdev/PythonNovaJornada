@@ -173,7 +173,7 @@ for linha in cursor.fetchall():
 ````
 
 <h3>
-busacando na minha tabela de dados onde o peso seja maior que 50
+buscando na minha tabela de dados onde o peso seja maior que 50
 LEMBRANDO QUE ESSA MANEIRA É A MANEIRA MAIS CERTA DE SE FAZER
 
 </h3>
