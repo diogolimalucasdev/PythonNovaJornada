@@ -35,7 +35,7 @@ cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
 # )
 
 # essa 3 maneira eu omito minhas chaves, perceba que antes dos values eu nao passo o nome e peso
-# mas passo nos values e tenho que passar o id o nome e o peso
+#  mas passo nos values e tenho que passar o id o nome e o peso
 # cursor.execute(
 #     'INSERT INTO clientes  VALUES (:id, :nome, :peso)',
 #     {
@@ -60,8 +60,8 @@ cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
 #     }
 # )
 
-# agora apagando um valor da base de dados, importante prestar atenção no comando
-# to mandando apagar da minha tabela clientes o id 2
+agora apagando um valor da base de dados, importante prestar atenção no comando
+to mandando apagar da minha tabela clientes o id 2
 cursor.execute(
     'DELETE FROM clientes WHERE id=:id',
     {
