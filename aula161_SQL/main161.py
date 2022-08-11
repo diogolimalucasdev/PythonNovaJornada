@@ -60,8 +60,8 @@ cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
 #     }
 # )
 
-agora apagando um valor da base de dados, importante prestar atenção no comando
-to mandando apagar da minha tabela clientes o id 2
+# agora apagando um valor da base de dados, importante prestar atenção no comando
+# to mandando apagar da minha tabela clientes o id 2
 cursor.execute(
     'DELETE FROM clientes WHERE id=:id',
     {
