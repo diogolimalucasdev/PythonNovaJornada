@@ -153,7 +153,7 @@ conexao.commit()
 ````
 
 <h3>
-To pedindo para meu cursos mostrarr todos os valores da minha tabela
+To pedindo para meu cursos mostrar todos os valores da minha tabela
 </h3>
 
 ````Python
