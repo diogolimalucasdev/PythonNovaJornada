@@ -36,7 +36,7 @@ cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
 ````
 
 <h2>
-Aprendia 4 maneiras de inserir os meus dados
+Aprendi 4 maneiras de inserir os meus dados
 
 </h2>
 
