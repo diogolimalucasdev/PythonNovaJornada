@@ -1,7 +1,7 @@
 <h1>Estudando SQL com Python </h1>
 
 <h3>
-    Primeiro de tudo faço o import do sqlite2
+    Primeiro de tudo faço o import do sqlite3
 
 </h3>
 
