@@ -1,7 +1,7 @@
 <h1>Estudando SQL com Python </h1>
 
 <h3>
-    Primeiro de tudo faço o import do sqlite2
+    Primeiro de tudo faço o import do sqlite3
 
 </h3>
 
@@ -36,7 +36,7 @@ cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
 ````
 
 <h2>
-Aprendia 4 maneiras de inserir os meus dados
+Aprendi 4 maneiras de inserir os meus dados
 
 </h2>
 
@@ -153,7 +153,7 @@ conexao.commit()
 ````
 
 <h3>
-To pedindo para meu cursos mostrarr todos os valores da minha tabela
+To pedindo para meu cursos mostrar todos os valores da minha tabela
 </h3>
 
 ````Python
